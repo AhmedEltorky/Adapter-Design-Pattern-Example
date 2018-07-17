@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package adapterdesignpattern;
 
 import adapterdesignpattern.adapter.SquareAdapter;
@@ -10,13 +5,10 @@ import interfaces.IQuadrantShape;
 
 /**
  *
- * @author eng-torky
+ * @author Ahmed El-Torky
  */
 public class Test {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Square sq = new Square(4);
         IQuadrantShape sqAd = new SquareAdapter(sq);
@@ -24,7 +16,7 @@ public class Test {
 
         System.out.println("Square:");
         sq.printSquareArea();
-        sq.printPerimeter();
+        sq.printSquarePerimeter();
         System.out.println("*********************");
 
         System.out.println("Square With Adapter:");

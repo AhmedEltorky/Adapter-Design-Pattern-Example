@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package adapterdesignpattern;
 
 /**
  *
- * @author eng-torky
+ * @author Ahmed El-Torky
  */
 public class Square {
 
@@ -37,7 +32,7 @@ public class Square {
         System.out.println("The square area = " + this.squareArea(edge));
     }
     
-    public void printPerimeter(){
+    public void printSquarePerimeter(){
         System.out.println("The square perimeter = " + this.squarePerimeter(edge));
     }
 

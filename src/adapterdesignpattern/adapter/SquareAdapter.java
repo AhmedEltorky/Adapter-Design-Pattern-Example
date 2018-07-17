@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package adapterdesignpattern.adapter;
 
 import adapterdesignpattern.Square;
@@ -10,53 +5,53 @@ import interfaces.IQuadrantShape;
 
 /**
  *
- * @author eng-torky
+ * @author Ahmed El-Torky
  */
 public class SquareAdapter implements IQuadrantShape {
 
-    Square sq;
+    Square square;
 
-    public SquareAdapter(Square sq) {
-        this.sq = sq;
+    public SquareAdapter(Square square) {
+        this.square = square;
     }
 
     @Override
     public void setWidth(double width) {
-        sq.setEdge(width);
+        square.setEdge(width);
     }
 
     @Override
     public void setLength(double length) {
-        sq.setEdge(length);
+        square.setEdge(length);
     }
 
     @Override
     public double getLength() {
-        return sq.getEdge();
+        return square.getEdge();
     }
 
     @Override
     public double getWidth() {
-        return sq.getEdge();
+        return square.getEdge();
     }
 
     @Override
     public double quadrantShapeleArea() {
-        return sq.squareArea(sq.getEdge());
+        return square.squareArea(square.getEdge());
     }
 
     @Override
     public double quadrantShapePerimeter() {
-        return sq.squarePerimeter(sq.getEdge());
+        return square.squarePerimeter(square.getEdge());
     }
 
     @Override
     public void printArea() {
-        sq.printSquareArea();
+        square.printSquareArea();
     }
 
     @Override
     public void printPerimeter() {
-        sq.printPerimeter();
+        square.printSquarePerimeter();
     }
 }
